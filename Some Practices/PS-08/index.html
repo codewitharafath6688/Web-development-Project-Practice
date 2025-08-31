@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS-08</title>
+    <style>
+        .container{
+            width: 1140px;
+            height: 340px;
+            border: 1px solid slateblue;
+            margin: 100px auto;
+            display: grid;
+            grid-template-columns: repeat(8,1fr);
+            gap: 20px;
+            grid-template-areas: 
+            ". . . . . . . ."
+            ". a a b b c c ."
+            ;
+        }
+
+        .card{
+            background-color: aqua;
+            grid-column: span 2;
+        }
+
+        .a{
+            grid-area: a;
+        }
+
+        .b{
+            grid-area: b;
+        }
+
+        .c{
+            grid-area: c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">card-1</div>
+        <div class="card">card-2</div>
+        <div class="card">card-3</div>
+        <div class="card">card-4</div>
+        <div class="card a">card-5</div>
+        <div class="card b">card-6</div>
+        <div class="card c">card-7</div>
+    </div>
+</body>
+</html>

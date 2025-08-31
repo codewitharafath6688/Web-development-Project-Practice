@@ -1,0 +1,11 @@
+prac - 1 => Click event and its methods
+
+prac - 2 => Click event handling case
+
+prac - 3 => Create comment box by click event
+
+prac - 4 => More Evene Type and one event case
+
+prac - 5 => Event bubble & Stop propagating
+
+prac - 6 => Event delegate and benefit of Event bubble

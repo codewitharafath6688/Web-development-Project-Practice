@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Box</title>
+    <style>
+        .para {
+            border: 2px solid green;
+            padding: 20px;
+            border-radius: 11px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Comments:</h1>
+        <div id="para-point">
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa necessitatibus corrupti porro
+                suscipit ipsam dolor omnis amet, consequuntur hic rem!</p>
+            <p class="para">Eveniet, saepe laboriosam soluta laudantium, cum necessitatibus nostrum aspernatur, quod hic
+                nemo laborum. Consectetur optio architecto facilis quia iste? Dolorum.</p>
+            <p class="para">Nobis minima, veniam deleniti velit, fuga assumenda cumque sequi commodi iure consequuntur
+                mollitia in quia suscipit excepturi at ad vel.</p>
+        </div>
+        <div id="cmt">
+            <textarea id="comment" cols="70" rows="5" placeholder="Write your comment"></textarea> <br>
+            <button id="btn-cmt">Post Comment</button>
+        </div>
+        <script>
+            // step-01: set up function
+            let btnCmt = document.getElementById('btn-cmt');
+            btnCmt.addEventListener('click', function(){
+                // step-02: call textarea
+                let comment = document.getElementById('comment');
+                // step-03: set textarea value
+                let txt = comment.value;
+                // step-04: call parent div
+                let paraPoint = document.getElementById('para-point');
+                // step-05: create new element
+                let newComment = document.createElement('p');
+                // step-06: add text in element
+                newComment.innerText = txt;
+                // step-07: add class of every paragraph element
+                newComment.classList.add('para')
+                // step-08: add to parent div
+                paraPoint.appendChild(newComment);
+                // step-09: clear the input
+                comment.value = '';
+            })
+        </script>
+    </section>
+</body>
+
+</html>

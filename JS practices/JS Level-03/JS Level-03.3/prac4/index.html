@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Evene Type</title>
+</head>
+<body>
+    <button id="click-me">Click Me</button> <br><br><br>
+    <button id="move-me">Move me</button> <br><br><br>
+    <button id="mouse-out">Out</button> <br><br><br>
+    <input type="text"  id="focus-me" placeholder="Fouce me"> <br><br><br>
+    <input type="text" id="blur-me" placeholder="Blur me"><br><br><br>
+    <input type="text"  id="down-me" placeholder="Down me"><br><br><br>
+    <input type="text" id="up-me" placeholder="Up me">
+    
+    <!-- Event case: If you type delete , button will be active. -->
+    <section>
+        <h1>My secret Info</h1>
+        <input type="text" placeholder="Write delete" id="delete-me">
+        <button id="btn-del" disabled>Delete</button>
+    </section>
+    <script>
+        // mouseenter event
+        let clickMe = document.getElementById('click-me');
+        clickMe.addEventListener('mouseenter', function(){
+            console.log('mouse entered');
+        })
+
+        // mousemove event
+        let moveMe = document.getElementById('move-me');
+        moveMe.addEventListener('mousemove', function(){
+            console.log('Mouse moved');
+        })
+
+        // mouseout event
+        let mouseOut = document.getElementById('mouse-out');
+        mouseOut.addEventListener('mouseout', function(){
+            console.log('Mouse was out');
+        })
+
+        // focus event
+        let focusMe = document.getElementById('focus-me');
+        focusMe.addEventListener('focus', function(){
+            console.log('Focused');
+        })
+
+        // blur event
+        let blurMe = document.getElementById('blur-me');
+        blurMe.addEventListener('blur', function(){
+            console.log('blurred');
+        })
+
+        // keydown event
+        let downMe = document.getElementById('down-me');
+        downMe.addEventListener('keydown', function(event){
+            console.log('Down done' , event.target.value);
+        })
+
+        // keyup event
+        let upMe = document.getElementById('up-me');
+        upMe.addEventListener('keyup', function(event){
+            console.log("Up done", event.target.value);
+        })
+
+        // event case solved
+        let deleteMe = document.getElementById('delete-me');
+        deleteMe.addEventListener('keyup', function(event){
+            let textme = event.target.value;
+            console.log('User is typing', textme);
+            let btnDel = document.getElementById('btn-del');
+            if(textme === 'delete'){
+                console.log('delete typed');
+                btnDel.removeAttribute('disabled');
+            } else{
+                console.log('something else');
+                btnDel.setAttribute('disabled', true);
+            }
+        })
+    </script>
+</body>
+</html>

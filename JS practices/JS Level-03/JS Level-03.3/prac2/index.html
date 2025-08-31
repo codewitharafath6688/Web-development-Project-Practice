@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="update">Update Your Name</h1>
+    <input id="input-name" type="text">
+    <button id="update-name">Update</button>
+
+    <script>
+        let updateName = document.getElementById('update-name');
+        updateName.addEventListener('click', function(){
+            let inputName = document.getElementById('input-name');
+            let name = inputName.value;
+            let update = document.getElementById('update');
+            update.innerText = name;
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM with Event</title>
+</head>
+<body>
+    <button  onclick="makeBlue()">Make Blue</button>
+    <button id="make-red">Make Red</button>
+    <button id="make-yellow">Make Yellow</button>
+
+    <script>
+        // method-01
+        function makeBlue(){
+            document.body.style.backgroundColor = 'blue';
+        }
+
+        // method-02
+        let makeRed = document.getElementById('make-red');
+        makeRed.onclick = function makeRed(){
+            document.body.style.backgroundColor = 'red';
+        }
+
+        // method-03
+        let makeYellow = document.getElementById('make-yellow');
+        makeYellow.addEventListener('click', function(){
+            document.body.style.backgroundColor = 'yellow';
+        })
+    </script>
+</body>
+</html>

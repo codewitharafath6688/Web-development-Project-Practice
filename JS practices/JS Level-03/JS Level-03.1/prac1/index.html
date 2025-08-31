@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox With Tailwind CSS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="container  heading border-2 border-[blue] mx-auto mt-5">
+        <h1 class="text-[40px] my-7 text-center">Flexbox With Tailwind CSS</h1>
+    </section>
+    <section class="flex flex-col md:flex-row gap-[15px] border-2 border-green-500 container p-4 mx-auto my-[20px]">
+        <div class="flex flex-col justify-between items-start gap-[20px] left-box border-2 border-red-500 py-20 px-5">
+            <h1 class="text-[35px]">Lorem ipsum dolor sit.</h1>
+            <p class="text-[18px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam impedit obcaecati libero officiis id qui voluptatem similique tenetur, provident amet adipisci debitis.</p>
+            <button class="border rounded-lg px-5 py-2 bg-gray-400 font-bold text-white hover:bg-[black]">Next Post</button>
+        </div>
+        <div class="flex flex-col justify-between items-start gap-[20px] right-box border-2 border-yellow-500 py-20 px-5">
+            <h1 class="text-[35px]">Lorem ipsum dolor sit.</h1>
+            <p class="text-[18px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam impedit obcaecati libero officiis id qui voluptatem similique tenetur, provident amet adipisci debitis.</p>
+            <button class="border rounded-lg px-5 py-2 bg-gray-400 font-bold text-white hover:bg-[black]">Next Post</button>
+        </div>
+    </section>
+</body>
+</html>

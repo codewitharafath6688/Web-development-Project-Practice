@@ -1,0 +1,16 @@
+.border{
+    border: 2px solid green;
+    border-radius: 15px;
+    padding: 10px;
+     background-color: aqua;
+}
+
+.border-margin{
+    margin-top: 10px;
+}
+
+.container{
+    width: 1100px;
+    margin: 15px auto;
+    /* border: 1px solid black; */
+}

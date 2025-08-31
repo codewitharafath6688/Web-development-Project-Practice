@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-03</title>
+</head>
+
+<body>
+    <section id="sec">
+        <h1>DOM-03</h1>
+        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur eveniet quasi, assumenda dolores
+            officiis, necessitatibus suscipit modi, id accusantium reprehenderit ut. Quibusdam doloremque ea inventore
+            ullam, odit iure dignissimos sed commodi beatae excepturi.</p>
+        <ul class="order">
+            <li class="o1">Google</li>
+            <li class="o1">YouTube</li>
+            <li class="o1">Facebook</li>
+        </ul>
+    </section>
+    <section id="sec1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sapiente nobis earum accusamus, accusantium placeat, itaque reprehenderit esse iusto eaque ipsum libero eligendi soluta qui magni animi voluptate harum asperiores dolorem!</p>
+    </section>
+    <script>
+        // querySelectorAll == getElementByClassName = wrong input = NodeList []
+
+        let orders = document.querySelectorAll('.order .o1');
+        console.log(orders);
+        for (let or of orders) {
+            console.log(or.innerText);
+        }
+
+        let paragraph = document.querySelectorAll('#sec .para');
+        console.log(paragraph);
+        for(let p of paragraph){
+            console.log(p.innerText);
+        }
+
+        // querySelector == getElementById = wrong input = null
+
+        let paragraph1 = document.querySelector('#sec1 p');
+        console.log(paragraph1);
+        console.log(paragraph1.innerText);
+    </script>
+</body>
+
+</html>

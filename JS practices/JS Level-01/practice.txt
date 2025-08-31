@@ -1,0 +1,34 @@
+
+prac => if else 
+
+prac - (2 to 4) => sum
+
+prac - 5 => loop
+
+prac - 6 => break
+
+prac - 7 => continue
+
+prac - 8 => do-while loop
+
+prac - 9 => array intro
+
+prac - 10 => push , pop , shift & unshift
+
+prac - 11 => Array includes , indexOf , isArray , join ,  concat , slice  & splice 
+
+prac - 12 => Array VS String
+
+prac - 13 => Comparison lowercase , uppercase & trim
+
+prac - 14 => String Slice, split, Concat and includes
+
+prac - 15 => reverse the sentence with letter
+
+prac - 16 => Object intro
+
+prac - 17 => Multiple ways to get & set object properties
+
+prac - 18 => Keys, Values, nested objects and delete
+
+prac - 19 => Loop an object and Ways to declare an Object

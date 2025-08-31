@@ -1,0 +1,21 @@
+prac - 1 => ES6 Arrow Function, (parameter) => {code excuation step} 
+
+prac - 2 => Function default parameter for not provided values (=) & use of template string (` `)
+
+prac - 3 => More Arrow functions and arrow functions =>
+
+prac - 4 => Spread operator, array max, copy arrays
+
+prac - 5 => Object and Array Destructuring
+
+prac - 6 => Keys, values, entries, delete, seal, freeze
+
+prac - 7 => Loop through an object using for in & for of (basically 'for in' loop use for object and 'for of' loop use for array)
+
+prac - 8 => Access Value, nested object, Optional chaining, Dot notation vs bracket notation
+
+prac - 9 => Array map to do one-line loop magic
+
+prac - 10 => foreach, filter, find, and differences between them
+
+prac - 11 => reduce() in JS

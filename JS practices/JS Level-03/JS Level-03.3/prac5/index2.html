@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop propagating</title>
+    <style>
+        #container {
+            border: 2px solid red;
+        }
+
+        #heading {
+            border: 2px solid yellowgreen;
+        }
+
+        #order {
+            border: 2px solid chocolate;
+        }
+
+        li {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <h1 id="heading">Lorem ipsum dolor sit amet.</h1>
+        <ul id="order">
+            <li id="ids1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, animi!</li>
+            <li id="ids2">Numquam iste accusamus ullam eveniet, iusto autem ut tempore ab.</li>
+            <li id="ids3">Eius ea cum ut dicta ex officiis dolores sunt nihil.</li>
+        </ul>
+    </section>
+    <script>
+        // Event bubble
+
+        // 2nd list event handle
+        document.getElementById('ids2').addEventListener('click', function(event){
+            console.log('2nd list clicked');
+            // event.stopPropagation();
+            event.stopImmediatePropagation();
+        })
+        
+        // 2nd list event handle
+        document.getElementById('ids2').addEventListener('click', function(event){
+            console.log('2nd list 2nd clicked'); 
+        })
+        
+        // 2nd list event handle
+        document.getElementById('ids2').addEventListener('click', function(event){
+            console.log('2nd list 3rd clicked');
+        })
+        
+        // ul event handle
+        document.getElementById('order').addEventListener('click', function(){
+            console.log('unorder list clicked');
+        })
+
+        // container section event handle
+        document.getElementById('container').addEventListener('click', function(){
+            console.log('container section clicked');
+        })
+    </script>
+</body>
+</html>

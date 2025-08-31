@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event delegate and benefit of Event bubble</title>
+</head>
+<body>
+    <h1>Event delegate and benefit of Event bubble</h1>
+    <ul id="order">
+        <li class="item">my fvt-1</li>
+        <li class="item">my fvt-2</li>
+        <li class="item">my fvt-3</li>
+        <li class="item">my fvt-4</li>
+        <li class="item">my fvt-5</li>
+    </ul>
+    <button id="btn-add">Add new item</button>
+    <script>
+        // let items = document.getElementsByClassName('item');
+        // for(let item of items){
+        //     item.addEventListener('click', function(event){
+        //        event.target.parentNode.removeChild(event.target);
+        //     })
+        // }
+
+        // Event delegate
+        document.getElementById('order').addEventListener('click', function(event){
+            event.target.parentNode.removeChild(event.target);
+        })
+
+        let btnAdd = document.getElementById('btn-add');
+        btnAdd.addEventListener('click', function(){
+            let orders = document.getElementById('order');
+            let newItem = document.createElement('li');
+            // newItem.addEventListener('click', function(event){
+            //     event.target.parentNode.removeChild(event.target);
+            // })
+            newItem.innerText = 'new item added';
+            orders.appendChild(newItem);
+        })
+    </script>
+</body>
+</html>

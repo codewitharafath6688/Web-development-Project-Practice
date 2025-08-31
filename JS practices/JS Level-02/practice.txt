@@ -1,0 +1,48 @@
+
+prac - 1 => Array Reverse Techniques Explained (for / for of loop, unshift, push & reverse method)
+
+prac - 2 => Array in Ascending & Descending Order (Manual & sort() method)
+
+prac - 3 => Array of Objects and Array of Array
+
+prac - 4 => Copy array elements to another array
+
+prac - 5 => Function parameter, handle multiple parameters
+
+prac - 7 => conditional return of odd and even
+
+prac - 8 => boolean & array types of parameters for a function
+
+prac - 9 => Sum of all numbers in an array using function
+
+prac - 10 => Return all the even numbers of an array and their sum
+
+prac - 11 => Unit convertion (inch to feet & mile to km)
+
+prac - 12 => Check whether a year is a Leap Year or not
+
+prac - 13 => Calculate the average of the odd numbers in an array
+
+prac - 14 => Remove duplicate items from an array
+
+prac - 15 => Math, abs, round, ceil, floor, and random number
+
+prac - 16 => A Simple introduction to JS Date and time
+
+prac - 17 => Swap variable, swap without temp, destructing
+
+prac - 18 => comparison of number
+
+prac - 19 => Find the max number in an array
+
+prac - 20 => Use add and multiplication to calculate cloth requirements
+
+prac - 21 => Find the cheapest phone from an array of phone objects
+
+prac - 22 => Calculate the total cost of the products in a shopping cart
+
+prac - 23 => (advanced) Multi-layer discount price calculation
+
+prac - 24 => Simple calculator to call function inside a function
+
+prac - 25 => Handle unexpected function input parameter error (validation)

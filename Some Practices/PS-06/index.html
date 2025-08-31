@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS-06</title>
+    <style>
+        header , nav , article , .sidebar , .advertise , footer{
+            background-color: aqua;
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+
+        header{
+            grid-area: header;
+        }
+
+        nav{
+            grid-area: nav;
+        }
+
+        main{
+            grid-area: main;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .sidebar{
+            grid-area: sidebar;
+        }
+
+        .advertise{
+            grid-area: advertise;
+        }
+
+        footer{
+            grid-area: footer;
+        }
+
+        .container{
+            display: grid;
+            gap: 10px;
+            grid-template-areas: 
+            "header header header header"
+            "nav main main sidebar"
+            "nav main main advertise"
+            "footer footer footer footer"
+            ;
+        }
+
+        @media screen and (max-width:576px) {
+            .container{
+                grid-template-areas: 
+                "header"
+                "nav"
+                "main"
+                "sidebar"
+                "advertise"
+                "footer"
+                ;
+            }
+        }
+
+        @media screen and (min-width:576px) and (max-width:992px) {
+            .container{
+                grid-template-areas: 
+                "header     header      header"
+                "nav        nav         nav"
+                "sidebar    main        main"
+                "advertise  footer      footer"
+                ;
+            }
+        }
+    </style>
+</head>
+
+<body class="container">
+    <header>
+        <h2>Header</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">nav-1</a></li>
+            <li><a href="">nav-2</a></li>
+            <li><a href="">nav-3</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Topic-1</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt cupiditate molestias facere vitae rerum
+                voluptate amet quos voluptates dolor nostrum, eligendi repudiandae maxime non beatae velit, repellendus
+                inventore fugiat ducimus.</p>
+        </article>
+        <article>
+            <h2>Topic-2</h2>
+            <p>Sed delectus sunt doloremque ut dignissimos. Nesciunt soluta officia culpa dolorum ab enim deserunt neque
+                ad voluptatem? Dolore sed ratione repellat commodi, nisi error dicta officiis eius ullam a odio.</p>
+        </article>
+    </main>
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+    </div>
+    <div class="advertise">
+        <h2>Advertise</h2>
+    </div>
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+</body>
+
+</html>

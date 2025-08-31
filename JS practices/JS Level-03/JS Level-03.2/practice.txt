@@ -1,0 +1,11 @@
+prac - 1 => Traversing dom - getElementsByTagName
+
+prac - 2 => Traversing dom - getElementsByClass VS getElementById
+
+prac - 3 => Traversing dom - getElementByQuerySelector & querySelectorAll
+
+prac - 4 => Dynamic style, getAttribute & setAttribute
+
+prac - 5 => Styling dom properties & add
+
+prac - 6 => NodeList, htmlcollection, parentNode, childnodes, createElement & innerHTML

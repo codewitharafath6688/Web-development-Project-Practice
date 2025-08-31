@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Project-02</title>
+</head>
+<body>
+    <h1 class="heading">Dom-02</h1>
+    <p id="Para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam porro dolorum quis commodi ullam perspiciatis amet quidem earum quam debitis consequuntur, corrupti rem et odit molestias quae iste, ex reiciendis soluta corporis libero. Cum tempora laboriosam, velit at, quas, reiciendis alias autem vitae porro incidunt corporis dolores similique. Illum officiis quod, minima temporibus praesentium sed?</p>
+    <h2 class="heading">Lorem ipsum dolor sit amet.</h2>
+
+    <script>
+        // getElementById = wrong input = null
+
+        let paragraph = document.getElementById('Para');
+        console.log(paragraph.innerText = 'I am web developer');
+
+        // getElementsByClassName = wrong input = HTMLCollection []
+
+        let headings = document.getElementsByClassName('heading');
+        console.log(headings);
+        for(let h1h2 of headings){
+            console.log(h1h2.innerText);
+        }
+    </script>
+</body>
+</html>

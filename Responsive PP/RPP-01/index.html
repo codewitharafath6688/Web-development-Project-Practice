@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-01</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .box{
+            background-color: aqua;
+            width: 40%;
+            height: calc(220px - 20px);
+            border-radius: 11px;
+            padding: 20px;
+        }
+
+        @media screen and (max-width:576px) {
+            .container{
+                flex-direction: column;
+            }
+            .box{
+               width: 80%; 
+               padding: 10px;
+               margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+    </div>
+    <div class="container">
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas distinctio, debitis doloribus assumenda fugiat modi! Neque reprehenderit sit animi vel.</p>
+        </div>
+        <div class="box">
+            <p>Aut non quos quisquam accusantium optio ipsum est iure modi. Libero, provident quibusdam corporis quod aliquid iure ipsam esse excepturi.</p>
+        </div>
+    </div>
+</body>
+</html>
