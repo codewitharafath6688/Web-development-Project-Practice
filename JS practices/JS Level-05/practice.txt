@@ -19,3 +19,7 @@ prac - 9 => Array map to do one-line loop magic
 prac - 10 => foreach, filter, find, and differences between them
 
 prac - 11 => reduce() in JS
+
+prac - 12 => Introduction to Class and objects
+
+prac - 13 => Inheritance, prototypical inheritance
