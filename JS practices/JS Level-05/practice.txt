@@ -23,3 +23,11 @@ prac - 11 => reduce() in JS
 prac - 12 => Introduction to Class and objects
 
 prac - 13 => Inheritance, prototypical inheritance
+
+prac - 14 => Encapsulation & this keyword
+
+prac - 15 => Different Truthy and Falsy Values in JavaScript
+
+prac - 16 => double equal (==) vs triple equal (===), implicit conversion
+
+prac - 17 => Block scope global scope, simple understanding of Hoisting
