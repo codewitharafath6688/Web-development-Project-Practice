@@ -31,3 +31,17 @@ prac - 15 => Different Truthy and Falsy Values in JavaScript
 prac - 16 => double equal (==) vs triple equal (===), implicit conversion
 
 prac - 17 => Block scope global scope, simple understanding of Hoisting
+
+prac - 18 => Callback function and pass different functions
+
+prac - 19 => function arguments pass by reference pass by value and use argument in function
+
+prac - 20 => Explore about Closure
+
+prac - 21 => Increment or, decrement
+
+prac - 22 => API Concept , Intro to JSON
+
+prac - 23 => Load Json Data using API Fetch Function
+
+prac - 24 => API Fetch & Load JSON Small Practice-01
